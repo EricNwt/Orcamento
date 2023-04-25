@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    <title>Orçamento</title>
+</head>
+<body>
+	<h1 id="titulo" class="container">Orçamento</h1>
+	<div id="padrao" class="container">
+    <h3>Sua renda</h3>
+    <h7>Digite sua renda: </h7><input type="number" name="renda" id="renda"><br>
+    
+    <!--Gastos com a casa-->
+    <br><h3>Gastos com a Casa</h3>
+    <h7>Digite a mensalidade com a internet: </h7><input type="number" name="internet" id="internet"><br>
+    <h7>Digite o valor gasto com iptu: </h7><input type="number" name="iptu" id="iptu"><br>
+    <h7>Digite o valor gasto com a luz: </h7><input type="number" name="luz" id="luz"><br>
+    <h7>Digite o valor gasto com água: </h7><input type="number" name="agua" id="agua"><br>
+    <h7>Digite o valor gasto com o gás: </h7><input type="number" name="gas" id="gas"><br>
+    <h7>Digite o valor gasto com serviço mensal: </h7><input type="number" name="servicomensal" id="servicomensal"><br>
+    <h7>Digite o valor gasto com o mercado: </h7><input type="number" name="mercado" id="mercado"><br>
+    
+    <!--Gasto com saúde-->
+    <br><h3>Gastos com a saúde</h3>
+    <h7>Digite a mensalidade com veterinário: </h7><input type="number" name="veterinario" id="veterinario"><br>
+    <h7>Digite o valor gasto com remedio: </h7><input type="number" name="remedio" id="remedio"><br>
+    <h7>Digite o valor gasto com médico: </h7><input type="number" name="medico" id="medico"><br>
+	
+	<!--Gasto com transporte-->
+    <br><h3>Gastos com transportes</h3>
+    <h7>Digite quanto você gastou com transporte público: </h7><input type="number" name="transportepublico" id="transportepublico"><br>
+    <h7>Digite quanto você gastou com transporte particular: </h7><input type="number" name="transporteparticular" id="transporteparticular"><br>
+    
+    <!--Gasto com automovel-->
+    <br><h3>Gastos com automovel</h3>
+    <h7>Digite quanto você gastou com combustivel: </h7><input type="number" name="combustivel" id="combustivel"><br>
+    <h7>Digite quanto você gastou com ipva: </h7><input type="number" name="ipva" id="ipva"><br>
+    <h7>Digite quanto você gastou com mecânico/manutenção do automovel: </h7><input type="number" name="mecanico" id="mecanico"><br>
+    <h7>Digite quanto você gastou com multa: </h7><input type="number" name="multa" id="multa"><br>
+    
+    <!--Gasto com despesas pessoais-->
+    <br><h3>Gastos com despesas pessoais</h3>
+    <h7>Digite quanto você gastou com higiene: </h7><input type="number" name="higiene" id="higiene"><br>
+    <h7>Digite quanto você gastou com cabeleireiro: </h7><input type="number" name="cabeleireiro" id="cabeleireiro"><br>
+    <h7>Digite quanto você gastou com vestuario: </h7><input type="number" name="vestuario" id="vestuario"><br>
+    <h7>Digite quanto você gastou com academia: </h7><input type="number" name="academia" id="academia"><br>
+	<h7>Digite quanto você gastou com ajuda financeira a outras pessoas: </h7><input type="number" name="ajuda" id="ajuda"><br>
+
+	<!--Gasto com lazer-->
+    <br><h3>Gastos com lazer</h3>
+    <h7>Digite quanto você gastou com restaurante: </h7><input type="number" name="restaurante" id="restaurante"><br>
+    <h7>Digite quanto você gastou com deposito: </h7><input type="number" name="deposito" id="deposito"><br>
+    <h7>Digite quanto você gastou com presente: </h7><input type="number" name="presente" id="presente"><br>
+    <h7>Digite quanto você gastou com passeio: </h7><input type="number" name="passeio" id="passeio"><br>
+    <h7>Digite quanto você gastou com jogos: </h7><input type="number" name="jogos" id="jogos"><br>
+    <h7>Digite quanto você gastou com passagem: </h7><input type="number" name="passagem" id="passagem"><br>
+	<h7>Digite quanto você gastou com hotel: </h7><input type="number" name="hotel" id="hotel"><br>
+    
+    <!--Gasto com dependente-->
+    <br><h3>Gastos com dependentes</h3>
+    <h7>Digite quanto você gastou com escola/faculdade/cursos: </h7><input type="number" name="escola" id="escola"><br>
+    <h7>Digite quanto você gastou com outras coisas que não foram citadas acima: </h7><input type="number" name="outros" id="outros"><br>
+    
+    <br><div class="bg-success text-light" id="res"></div><br>
+    <div class="bg-success text-light" id="gasto"></div><br>
+    <div class="bg-success text-light" id="maior"></div>
+    </div><br>
+    <div id="botao">
+    <input class="btn btn-success" type="button" value="Fazer orçamento" onclick="calculo()">
+	</div>
+</body>
+</html>
